@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
         // One argument, print table for that temperature
         double T = atof(argv[1]);
         if (T < MIN_T || T > MAX_T) {
-            print_error("Error: Coolness. Acceptable input values are -99<=T<=50 and 0.5<=V.\n");
+            printf("Error: Coolness. Acceptable input values are -99<=T<=50 and 0.5<=V.\n");
             return 1;
         }
         print_table(calculate_coolness, T, T, 1.0, 5.0, 15.0, 5.0);
@@ -29,7 +29,7 @@ int main(int argc, char* argv[]) {
         double T = atof(argv[1]);
         double V = atof(argv[2]);
         if (T < MIN_T || T > MAX_T || V < MIN_V || V > MAX_V) {
-            print_error("Error: Coolness. Acceptable input values are -99<=T<=50 and 0.5<=V.\n");
+            printf("Error: Coolness. Acceptable input values are -99<=T<=50 and 0.5<=V.");
             return 1;
         }
         double coolness = calculate_coolness(T, V);

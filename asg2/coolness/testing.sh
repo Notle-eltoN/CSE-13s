@@ -9,7 +9,7 @@ else
     echo "Test failed"
 fi
 
-<<'###BLOCK-COMMENT'
+
 # Test normal operations with one argument
 echo "Testing normal operations with one argument:"
 ./coolness 32 > output.txt
@@ -19,7 +19,7 @@ else
     echo "Test failed"
 fi
 
-<<'###BLOCK-COMMENT'
+
 # Test normal operations with two arguments
 echo "Testing normal operations with two arguments:"
 ./coolness 32.5 10 > output.txt
@@ -28,6 +28,7 @@ if diff twoInputs.txt output.txt; then
 else
     echo "Test failed"
 fi
+
 
 # Test temperature out of range
 echo "Testing temperature out of range:"
@@ -38,6 +39,7 @@ else
     echo "Test failed"
 fi
 
+
 # Test wind out of range
 echo "Testing wind out of range:"
 ./coolness 10 0 > output.txt
@@ -46,6 +48,4 @@ if grep -q "Error: Coolness. Acceptable input values are -99<=T<=50 and 0.5<=V."
 else
     echo "Test failed"
 fi
-###BLOCK-COMMENT
-
 
