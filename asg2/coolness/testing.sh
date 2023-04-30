@@ -49,3 +49,12 @@ else
     echo "Test failed"
 fi
 
+# Test both temperature and wind out of range
+echo "Test both wind and temp out of range:"
+./coolness 65 0 >output.txt
+if grep -q "Error: Coolness. Acceptable input values are -99<=T<=50 and 0.5<=V." output.txt; then
+    echo "Test passed"
+else
+    echo "Test failed"
+fi
+

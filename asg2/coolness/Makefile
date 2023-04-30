@@ -1,5 +1,5 @@
 CC = gcc
-LFLAGS = 
+LFLAGS = -lm
 
 SOURCES = $(wildcard *.c)
 OBJECTS = $(subst .c,.o,$(SOURCES))
@@ -9,10 +9,12 @@ OBJECTS = $(subst .c,.o,$(SOURCES))
 all : coolness 
 
 coolness : coolness.o
-	$(CC) $(LFLAGS) -o coolness $(OBJECTS)
+	$(CC) $(LFLAGS) -o coolness $(OBJECTS) -lm
 
 %.o : %.c
 	$(CC) -c $<
 
 clean:
 	rm $(OBJECTS) coolness
+
+
