@@ -2,12 +2,24 @@
 
 # Test normal operations with zero arguments
 echo "Testing normal operations with zero arguments:"
+Testing normal operations with zero arguments:
 ./coolness > output.txt
 if diff noInputs.txt output.txt; then
     echo "Test passed"
 else
     echo "Test failed"
 fi
+5d4
+< 
+9d7
+< 
+13d10
+< 
+17d13
+< 
+21d16
+< 
+Test failed
 
 <<'###BLOCK-COMMENT'
 # Test normal operations with one argument
