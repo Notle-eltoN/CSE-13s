@@ -9,17 +9,7 @@ if diff noInputs.txt output.txt; then
 else
     echo "Test failed"
 fi
-5d4
-< 
-9d7
-< 
-13d10
-< 
-17d13
-< 
-21d16
-< 
-Test failed
+Test passed
 
 <<'###BLOCK-COMMENT'
 # Test normal operations with one argument
@@ -31,6 +21,7 @@ else
     echo "Test failed"
 fi
 
+<<'###BLOCK-COMMENT'
 # Test normal operations with two arguments
 echo "Testing normal operations with two arguments:"
 ./coolness 32.5 10 > output.txt

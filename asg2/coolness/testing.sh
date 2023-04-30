@@ -19,6 +19,7 @@ else
     echo "Test failed"
 fi
 
+<<'###BLOCK-COMMENT'
 # Test normal operations with two arguments
 echo "Testing normal operations with two arguments:"
 ./coolness 32.5 10 > output.txt

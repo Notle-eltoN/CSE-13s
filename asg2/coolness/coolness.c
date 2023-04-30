@@ -54,7 +54,8 @@ void print_table(double (*f)(double, double), double start_T, double end_T, doub
             double coolness = f(T, V);
             printf("%.1f\t%.1f\t%.1f\n", T, V, coolness);
         }
-        printf("\n");
+        if (T<end_T){
+        printf("\n");}
     }
 }
 
