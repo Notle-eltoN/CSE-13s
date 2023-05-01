@@ -58,3 +58,4 @@ else
     echo "Test failed"
 fi
 
+rm output.txt

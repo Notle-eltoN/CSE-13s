@@ -1,3 +1,7 @@
+# Author: Elton Chang
+# A program that calculates “coolness” as a function of wind speed and temperature.  
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
