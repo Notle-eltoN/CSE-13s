@@ -1,5 +1,5 @@
-# Author: Elton Chang
-# A program that reads a series of positive integers from stdin and prints out a histogram. 
+// Author: Elton Chang
+// A program that reads a series of positive integers from stdin and prints out a histogram. 
 
 #include <stdio.h>
 #include <stdlib.h>
